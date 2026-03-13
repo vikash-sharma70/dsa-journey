@@ -77,3 +77,20 @@ for(let i = 0; i < q; i++){
 // 5 6 7 8 
 // 9 10 11 12 
 // 13 14 15 16 
+
+
+//===================p5===============//
+
+let r = 4;
+let chh = 65
+
+for(let i = 0; i<r; i++){
+    let row = "";
+    for(let j = 0; j<r; j++){
+        row += String.fromCharCode(chh) + " ";
+        chh++;
+
+    }
+    console.log(row);
+    
+}
