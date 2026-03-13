@@ -39,3 +39,22 @@ for (let i = 1; i <= m; i++){
     }
     console.log(row);
 }
+
+
+//===================p3===============//
+let p = 4;
+
+for (let i = 0; i < p; i++) {
+  let row = "";
+
+  for (let j = 0; j < p; j++) {
+    row += String.fromCharCode(65 + j) + " ";
+  }
+
+  console.log(row);
+}
+
+// A B C D 
+// A B C D 
+// A B C D 
+// A B C D 
