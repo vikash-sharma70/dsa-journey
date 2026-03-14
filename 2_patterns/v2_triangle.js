@@ -73,7 +73,6 @@ for(let i = 1; i<=n; i++){
 
 
 //=====================P5=================//
-
 let r = 4
 for(let i = 1; i<=r; i++){
     let rows = "";
@@ -81,20 +80,34 @@ for(let i = 1; i<=r; i++){
         rows += j + " ";
 
     }
-    console.log(rows);
-        
+    console.log(rows);    
 }
-
 // 1 
 // 2 1 
 // 3 2 1 
 // 4 3 2 1 
 
+//=====================P7=================//
+let s = 4;
+let char1 = 65;
+for(let i = 1; i<=s; i++){
+    let rows = '';
+    for(let j = i; j>0; j--){
+        rows += String.fromCharCode(char1 + j - 1) + " ";
+    }
+    console.log(rows);
+    
+}
+// A 
+// B A 
+// C B A 
+// D C B A 
 
-//=====================P6(Floyd's triangle pattern)=================//
-let s = 4
+
+//=====================P8(Floyd's triangle pattern)=================//
+let t = 4
 let num1 = 1;
-for (let i = 1; i<=s; i++){
+for (let i = 1; i<=t; i++){
     let rows = "";
     for(let j = 1; j<=i; j++){
         rows += num1 + " ";
@@ -107,3 +120,21 @@ for (let i = 1; i<=s; i++){
 // 2 3 
 // 4 5 6 
 // 7 8 9 10 
+
+//=====================P9=================//
+let u = 4
+let char2 = 65
+for (let i = 1; i <= u; i++){
+    let rows = ""
+    for (let j= 1; j<=i; j++){
+        rows += String.fromCharCode(char2) + " "
+        char2++
+    }
+    console.log(rows);
+    
+}
+
+// A 
+// B C 
+// D E F 
+// G H I J 
