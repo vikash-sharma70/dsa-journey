@@ -52,3 +52,22 @@ for(let i = 0; i<=p; i++){
 // C C C 
 // D D D D 
 // E E E E E 
+
+
+//=====================P4=================//
+let q = 4
+
+for(let i = 1; i<=n; i++){
+    let rows= "";
+    for(let j = 1; j<=i; j++){
+        rows += j + " ";
+    }
+    console.log(rows);
+    
+}
+
+// 1 
+// 1 2 
+// 1 2 3 
+// 1 2 3 4 
+
