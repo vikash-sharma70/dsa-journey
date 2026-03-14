@@ -138,3 +138,28 @@ for (let i = 1; i <= u; i++){
 // B C 
 // D E F 
 // G H I J 
+
+//=====================P10=================//
+let v = 4;
+
+for (let i = 1; i <= v; i++) {
+
+    let row = "";
+
+    // spaces
+    for (let s = 1; s <= i - 1; s++) {
+        row += " ";
+    }
+
+    // numbers
+    for (let j = 1; j <= v - i + 1; j++) {
+        row += i + " ";
+    }
+
+    console.log(row);
+}
+
+// 1 1 1 1 
+//   2 2 2 
+//     3 3 
+//       4 
