@@ -77,7 +77,7 @@ for(let i = 1; i<=n; i++){
 let r = 4
 for(let i = 1; i<=r; i++){
     let rows = "";
-    for (let j=i; j<=i && j > 0; j--){
+    for (let j=i; j > 0; j--){
         rows += j + " ";
 
     }
