@@ -2,23 +2,24 @@
 /*
 let arr = [20,4,2,0,34,21];
 
-let result = findMin(arr, 0);
+let result = findMax(arr, 0);
 
-console.log("Min num is:", result);
+console.log("Max num is:", result);
 
-function findMin(arr, index){
+function findMax(arr, index){
     //base case
     if(index === arr.length - 1){
         return arr[index]
     }
 
     //recursion
-    let recAns = findMin(arr, index+1);
+    let recAns = findMax(arr, index+1);
 
-    return Math.min(arr[index], recAns);
+    return Math.max(arr[index], recAns);
     
 }
 */
+
 
 
 //========Without using Math.min=========//
