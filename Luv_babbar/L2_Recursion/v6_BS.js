@@ -6,7 +6,7 @@ function recursiveBS(arr, start, end, target){
     }
 
     //1st case, We need to solve
-    let mid = (start+end)/2;
+    let mid = Math.floor((start + end) / 2);
     if(arr[mid] == target){
         return mid;
     }
@@ -22,3 +22,6 @@ function recursiveBS(arr, start, end, target){
         return recAns;
     }
 }
+
+let result = recursiveBS([1,2,3,4,5,6], 0, 5, 4)
+console.log("Result is:", result);
