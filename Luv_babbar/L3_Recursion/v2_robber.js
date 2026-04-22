@@ -151,7 +151,7 @@ console.log("Max amount is:", 14)
 */
 
 
-//==============LeetCode===============//
+//==============LeetCode(still need to solve using DP as this I am unable to submit)===============//
 var rob = function(nums, index) {
 
     function solve(index){
