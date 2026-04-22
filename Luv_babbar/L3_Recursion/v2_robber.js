@@ -32,15 +32,7 @@ function robber(nums, index){
     let excludeAns = robber(nums, index + 1);
 
     // manual max logic
-    let finalAns;
-
-    if(includeAns > excludeAns){
-        finalAns = includeAns;
-    } else {
-        finalAns = excludeAns;
-    }
-
-    return finalAns;
+    return (includeAns > excludeAns) ? includeAns : excludeAns;
 }
 
 let nums = [2,4,1,6,9,3,1];
