@@ -25,3 +25,6 @@ function coinChange(amount, coins) {
 }
 
 console.log(coinChange(5, [1,2,5]));
+
+
+//Recommended way to solve this using DP
