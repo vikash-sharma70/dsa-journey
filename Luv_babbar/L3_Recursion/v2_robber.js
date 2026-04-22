@@ -20,6 +20,7 @@
 
 
 //=============OR Without using Math.max=============//
+/*
 function robber(nums, index){
     if(index >= nums.length) {
         return 0;
@@ -39,6 +40,7 @@ let nums = [2,4,1,6,9,3,1];
 let ans = robber(nums, 0);
 console.log("Max amount is:", ans);
 
+*/
 
 
 /*
@@ -147,3 +149,25 @@ robber(0) call hua
 console.log("Max amount is:", 14)
 
 */
+
+
+//==============LeetCode===============//
+var rob = function(nums, index) {
+
+    function solve(index){
+        if(index >= nums.length){
+            return 0;
+        }
+
+        let includeAns = nums[index] + solve(index + 2);
+        let excludeAns = solve(index + 1);
+
+        return (includeAns > excludeAns) ? includeAns : excludeAns;
+    }
+
+    return solve(0);
+    
+};
+
+let ans = rob([2,7,9,3,1], 0)
+console.log(ans)
