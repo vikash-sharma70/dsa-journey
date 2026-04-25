@@ -65,7 +65,7 @@ nums → purane address pe hi hai */
 
 
 
-//==============DSA Use Case (🔥 REAL IMPACT)
+//==============DSA Use Case (REAL IMPACT)
 //✔️ Backtracking Example
 function solve(arr){
     arr.push(100);
@@ -82,7 +82,7 @@ console.log("Outside:", nums2);
 // 👉 Isliye backtracking me:
 
 // push → pop karna zaroori hota hai
-// 🧠 5️⃣ How to avoid change (Clone)
+// 5️⃣ How to avoid change (Clone)
 function safeUpdate(arr){
     let copy = [...arr]; // clone
     copy[0] = 999;
