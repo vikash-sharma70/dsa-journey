@@ -63,3 +63,26 @@ function toUpper(ch){
 
 console.log("To Upper case:", toUpper('m'));
 
+
+//=======Full String Convert (Lower → Upper)=======//
+function toUpString(str){
+    let result = "";
+
+    for(let i =0; i<str.length; i++){
+        let ch = str[i]
+
+        if(ch>= 'a' && ch<='z'){
+            let upper = String.fromCharCode(ch.charCodeAt(0) - 'a'.charCodeAt(0) + 'A'.charCodeAt(0))
+            console.log("Upper:", upper);
+            result += upper;
+            console.log("result:", result);
+        } else {
+            result += ch;
+        }
+    }
+    return result;
+}
+
+console.log("To upper string:", toUpString("vikash"));
+
+
