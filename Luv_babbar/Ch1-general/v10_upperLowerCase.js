@@ -29,10 +29,12 @@ console.log("A in Lower case:", lower);
 //================2.ASCII / CharCode (DSA level)===========//
 function toLower(ch){
     let ascii = ch.charCodeAt(0);
+    console.log("small Ascii is:", ascii);
 
     //check if upperCase
     if(ascii >= 'A'.charCodeAt(0) && ascii <= 'Z'.charCodeAt(0) ){
-        let newAscii = ascii - 'A'.charCodeAt(0) + 'a'.charCodeAt(0);
+        let newAscii = ascii - 'A'.charCodeAt(0) + 'a'.charCodeAt(0); //77 - 65 + 97 = 12+97= 109 → 'm'
+        console.log("samll New Ascii is:", newAscii);
 
         return String.fromCharCode(newAscii);
     }
@@ -50,7 +52,7 @@ function toUpper(ch){
 
     //check if upperCase
     if(ascii >= 'a'.charCodeAt(0) && ascii <= 'z'.charCodeAt(0) ){
-        let newAscii = ascii - 'a'.charCodeAt(0) + 'A'.charCodeAt(0); //107 - 97 + 65 = 75
+        let newAscii = ascii - 'a'.charCodeAt(0) + 'A'.charCodeAt(0); //109 - 97 + 65 = 77 -> M
         console.log("New Ascii is:", newAscii);
 
         return String.fromCharCode(newAscii);
