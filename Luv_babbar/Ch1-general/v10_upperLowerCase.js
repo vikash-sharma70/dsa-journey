@@ -45,10 +45,13 @@ console.log("To Lower case:", toLower('M'));
 
 function toUpper(ch){
     let ascii = ch.charCodeAt(0);
+    console.log("Ascii is:", ascii);
+    
 
     //check if upperCase
     if(ascii >= 'a'.charCodeAt(0) && ascii <= 'z'.charCodeAt(0) ){
-        let newAscii = ascii - 'a'.charCodeAt(0) + 'A'.charCodeAt(0);
+        let newAscii = ascii - 'a'.charCodeAt(0) + 'A'.charCodeAt(0); //107 - 97 + 65 = 75
+        console.log("New Ascii is:", newAscii);
 
         return String.fromCharCode(newAscii);
     }
