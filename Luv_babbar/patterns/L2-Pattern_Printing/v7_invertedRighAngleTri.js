@@ -2,11 +2,26 @@
 
 invertedRightAngleTriPat(5)
 
+/*
 function invertedRightAngleTriPat(n) {
     for(let i = n; i<=n && i>=1; i--){
         let result = ""
 
         for(let j=1; j<= i; j++){
+            result += "*"
+        }
+        console.log(result);
+        
+    }
+}
+    */
+
+//==============OR: using formula============//
+function invertedRightAngleTriPat(n) {
+    for(let i = 1; i<=n; i++){
+        let result = ""
+
+        for(let j=1; j<= (n-i+1); j++){
             result += "*"
         }
         console.log(result);
