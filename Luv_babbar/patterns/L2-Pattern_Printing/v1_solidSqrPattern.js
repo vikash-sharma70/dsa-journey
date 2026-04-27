@@ -18,3 +18,12 @@ function solidSqr(num){
 }
 
 solidSqr(5);
+
+/*
+always approach should be:
+
+1. find n;
+2. no of rows;
+3. no of columns;
+4. analysis-> try to create formula
+*/
