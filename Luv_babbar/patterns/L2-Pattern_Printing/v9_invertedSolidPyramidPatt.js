@@ -1,4 +1,8 @@
-
+/*
+>Logic: Each row is composed of some spaces and startTransition
+>Spaces: formula is-> row-1
+>Stars: formula is-> (2*n)-(2*row-1)
+*/
 invertedSolidPyraPatt(5)
 
 
