@@ -8,10 +8,12 @@ function largestNum(n){
 
     while(n!=0){
 
-        digit = n%10
-        if(digit > largest){
-            largest = digit
-        }
+        let digit = n%10
+        // if(digit > largest){
+        //     largest = digit
+        // }
+        //=========OR============
+        largest = Math.max(digit, largest);
 
         n = Math.floor(n/10)
     }

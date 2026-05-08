@@ -11,9 +11,12 @@ function smallestNum(n){
     while(n!=0){
 
         let digit = n%10;
-        if(digit<smallest){
-            smallest = digit
-        }
+        // if(digit<smallest){
+        //     smallest = digit
+        // }
+
+        //=========OR============
+        smallest = Math.min(digit, smallest);
         n = Math.floor(n/10)
     }
 
