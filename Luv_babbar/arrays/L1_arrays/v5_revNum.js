@@ -41,7 +41,7 @@ function reverseInteger(num){
     // Step 1: store the sign
     let sign = num < 0 ? -1 : 1;
 
-    // Step 2: Make number positive
+    // Step 2: Make number positive using abs function
     num = Math.abs(num);
 
     let rev = 0;
