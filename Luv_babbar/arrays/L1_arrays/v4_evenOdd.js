@@ -19,3 +19,34 @@ function checkEvOd(num){
 
 let result = checkEvOd(451)
 console.log(result);
+
+
+
+
+//===============Program2==============//
+let result1 = findEvenOddDigits(6458932);
+console.log("digits:",result1);
+
+function findEvenOddDigits(n){
+
+    let evenDigits = [];
+    let oddDigits = [];
+
+    while(n != 0){
+
+        let digit = n % 10;
+
+        if(digit % 2 === 0){
+            evenDigits.push(digit);
+        } else {
+            oddDigits.push(digit);
+        }
+
+        n = Math.floor(n / 10);
+    }
+
+    return {
+        even: evenDigits,
+        odd: oddDigits
+    };
+}
