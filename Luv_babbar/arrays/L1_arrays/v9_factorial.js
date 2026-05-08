@@ -10,3 +10,19 @@ function factOfNum(n){
     }
     return fact
 }
+
+
+//========OR Recursion=======
+function factorial(n){
+
+    // base case
+    if(n === 0 || n === 1){
+        return 1;
+    }
+
+    // recursion
+    return n * factorial(n - 1);
+}
+
+// test
+console.log(factorial(6)); // 120
