@@ -1,3 +1,10 @@
+// ✅ 1️⃣ Brute Force (Sorting) ❌
+let arr = [1,0,1,0,1,0];
+
+arr.sort((a,b) => a - b);
+
+console.log(arr);
+
 //2️⃣ Count Method (Better)
 let result = sortZerosOnes([1,0,1,0,1,0,1])
 console.log(result);
