@@ -50,3 +50,29 @@ function findEvenOddDigits(n){
         odd: oddDigits
     };
 }
+
+
+
+//=========Even and odds in an array=======//
+
+let result2 = evenOdds([3,5,12,98,0,8,1])
+console.log("Evens and odds:",result2);
+
+function evenOdds(arr){
+
+    let evens=[];
+    let odds=[]
+
+    for(let i=0; i<=arr.length-1; i++){
+        if(arr[i]%2==0){
+            evens.push(arr[i])
+        } else{
+            odds.push(arr[i])
+        }
+    }
+    return {
+        even: evens,
+        odd: odds
+    }
+}
+
