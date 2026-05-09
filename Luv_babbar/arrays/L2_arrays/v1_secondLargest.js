@@ -6,6 +6,9 @@ function secondLarg(arr){
     let secondLarg = -Infinity;
 
     for(let i = 0; i<arr.length; i++){
+        if(arr.length < 2){
+        return "Not enough elements";
+    }
 
        // Key Insight (Golden Logic)
          // New largest milta hai → purana largest → secondLargest ban jata hai
